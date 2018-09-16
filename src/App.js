@@ -19,7 +19,7 @@ class App extends Component {
   loadWithWorker() {
     new AMILoaderWorker(
       () => this.setState({ text: "done" }),
-      () => this.setState({ text: "error" }),
+      e => this.setState({ text: "error" + e }),
       true,
       (loaded, total) =>
         this.setState({ text: `downloading:(${loaded}/${total})` }),

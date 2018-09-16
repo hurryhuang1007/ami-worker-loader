@@ -1,6 +1,6 @@
 import * as THREE from "three";
-import WK from "worker-loader!./AMILoader.worker.js";
-import { SeriesModel, StackModel, FrameModel } from "ami.js";
+import WK from "./AMILoader.worker.js";
+import { SeriesModel, StackModel, FrameModel } from "ami.js/src/ami.js";
 
 export default class AMILoaderWorker {
   /**

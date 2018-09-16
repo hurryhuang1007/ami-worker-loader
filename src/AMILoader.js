@@ -1,4 +1,4 @@
-import { VolumeLoader } from "ami.js";
+import { VolumeLoader } from "ami.js/src/ami.js";
 import JSZip from "jszip";
 import axios from "axios";
 

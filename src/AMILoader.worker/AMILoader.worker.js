@@ -1,4 +1,5 @@
-import { VolumeLoader } from "ami.js";
+import './AMILoader.workerEnv'
+import { VolumeLoader } from "ami.js/src/ami.js";
 import JSZip from "jszip";
 import axios from "axios";
 // console.log(self.nodeRequire, THREE, new VolumeLoader())
