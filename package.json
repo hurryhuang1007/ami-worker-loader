@@ -2,6 +2,7 @@
   "name": "ami-worker-loader",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "/ami-worker-loader",
   "dependencies": {
     "ami.js": "git://github.com/FNNDSC/ami.git#dev",
     "axios": "^0.18.0",
