@@ -1,5 +1,5 @@
 import './AMILoader.workerEnv'
-import { VolumeLoader } from "ami.js/src/ami.js";
+import { VolumeLoader } from "ami.js";
 import JSZip from "jszip";
 import axios from "axios";
 // console.log(self.nodeRequire, THREE, new VolumeLoader())
@@ -38,7 +38,7 @@ function loadWithUrls(links) {
             zip
               .file(item)
               .async("arraybuffer")
-              .then(buffer => this.loader.parse({ url: item, buffer }))
+              .then(buffer => loader.parse({ url: item, buffer }))
               .then(series => {
                 seriesContainer.push(series);
                 let seriesContainerLength = seriesContainer.length;
